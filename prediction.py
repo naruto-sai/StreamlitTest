@@ -1,7 +1,7 @@
-import keras
+import joblib as jb
 
 def predict(data):
-    preprocess = keras.models.load_model("preprocessor.keras")
+    preprocess = jb.load("preprocessor.sav")
     data = preprocess(data)
-    reg = keras.models.load_model("tensor_model.h5")
+    reg = jb.load("tensor_model.sav")
     return reg.predict(data)
