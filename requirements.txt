@@ -1,10 +1,6 @@
-python>3.7
+python
 joblib
 scikit-learn
 pandas
-keras
-tensorflow-gpu
-tensorflow
 numpy
 Pillow
-h5py

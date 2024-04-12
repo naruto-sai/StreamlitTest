@@ -1,7 +1,5 @@
 import joblib as jb
-# import tensorflow as tf
+import xgboost
 def predict(data):
-    preprocess = jb.load("preprocessor.sav")
-    tensor_data = preprocess(data)
-    reg = jb.load("tensor_model.sav")
-    return reg.predict(tensor_data)
+    reg = jb.load("xgb_tune.sav")
+    return reg.predict(data)
