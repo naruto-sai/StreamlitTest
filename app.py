@@ -80,5 +80,6 @@ if st.button("Estimate Carbin Footprint"):
        'Recycling_Plastic':plastic, 'Recycling_Glass':glass, 'Recycling_Metal':metal}
     data= pd.DataFrame(dict1, index=[0])
     result = predict(data.loc[:0])
+
     st.text(result[0])
 st.text('')
