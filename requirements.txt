@@ -1,8 +1,9 @@
-joblib==1.4.0
+joblib
 scikit-learn
 pandas
-keras==2.10.0
-tensorflow-gpu==2.10.1
+keras
+tensorflow-gpu
+tensorflow
 numpy
-Pillow>=3.1.1
-h5py>=2.7.1
+Pillow
+h5py
