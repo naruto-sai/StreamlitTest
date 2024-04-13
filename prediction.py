@@ -1,4 +1,4 @@
-import joblib as jb
+import pickle
 def predict(data):
-    reg = jb.load("xgb_tune.sav")
+    reg = pickle.load(open('xgb_tune_1.pkl','rb'))
     return reg.predict(data)

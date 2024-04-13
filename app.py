@@ -217,7 +217,7 @@ if st.button("Estimate Carbin Footprint"):
        'SA_often':sa_oft, 'SA_sometimes':sa_st, 'ATF_never':atf_nev,'ATF_rarely':atf_rare, 'ATF_very_frequent':atf_vf,
         'WB_large':wb_l, 'WB_medium':wb_m, 'WB_small':wb_s , 'WCP':waste_count, 
        'EE_sometimes':ee_some, 'EE_yes':ee_yes, 'CG_grill':cg_grill, 'CG_oven':cg_oven, 'CG_stove':cg_stove,
-       'CG_microwave':cg_microwave, 'CG_airfyer':cg_airfryer, 'RP_paper':r_paper,
+       'CG_microwave':cg_microwave, 'CG_airfryer':cg_airfryer, 'RP_paper':r_paper,
        'RP_plastic':r_plastic, 'RP_glass':r_glass, 'RP_metal':r_metal}
     data= pd.DataFrame(dict1, index=[0])
     result = predict(data)
